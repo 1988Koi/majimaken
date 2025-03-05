@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Application</title>
+    <style></style>
+</head>
+<body>
+
+<div class="form-container">
+    <img src="images/slogan.jpg" alt="constc" class="constc">
+    <h1>Majima Construction - Employee Application</h1>
+    <form id="application-form" action="#" method="post">
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="position">Position Desired</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option value="construction_worker">Construction Worker</option>
+                <option value="project_manager">Project Manager</option>
+                <option value="site_supervisor">Site Supervisor</option>
+                <option value="safety_officer">Safety Officer</option>
+                <option value="dealer">"""Security"""</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Experience (NO EXPERIENCE NEEDED!!!!!!!!)</label>
+            <textarea id="experience" name="experience" rows="4" placeholder="Describe your previous work experience"></textarea>
+        </div>
+
+        <label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            I agree to the terms and conditions
+        </label><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<script>
+    const form = document.getElementById("application-form");
+    const checkbox = document.getElementById("agreement");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        if (checkbox.checked) {
+            window.location.href = "help.html"; 
+        }
+    });
+</script>
+
+</body>
+</html>

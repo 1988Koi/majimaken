@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majima construction</title>
+    <style></style>
+</head>
+<body>
+<div class="navbar">
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <div class="menu">
+        <img src="images/construction.jpg" alt="construction" class="construction">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="work.html">Work with us!</a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="aboutdiv">
+    <h1 id="home">Welcome to Majima Kensetsu!</h1>
+    <button>Schedule a visit</button>
+</div>
+
+<div class="about">
+<h2 id="about">About</h2>
+<p>Majima Kensetsu or Majima construction</p>
+<p>is a building company localized in Kamurocho</p>
+<p>It was founded in 2006 by Goro Majima</p>
+<p>Mr Majima is a well respected law abiding citizen</p>
+<p>who took the initiative to build a new mall</p>
+<p>for Kamurocho, completely independent from the state.</p>
+<p>Mr Majima bought West Park and completely changed it</p>
+<p>going from a homeless heaven to Kamurocho biggest mall</p>
+</div>
+
+<div class="contact">
+<h2 id="contact">Contact</h2>
+<p>Interested?</p>
+<p>Give us a call or a Email!</p>
+<p>(555) 123-4567</p>
+<p>contact@majimaconstruction.com</p>
+</div>
+
+</div>
+
+<script>
+    function toggleMenu() {
+        let menu = document.querySelector(".menu");
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+    }
+</script>
+
+</body>
+</html>
